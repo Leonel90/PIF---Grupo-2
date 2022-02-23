@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::root {
+    --naranja: #ff8800;
+    --rojo: rgba(233, 67, 67, 0.89);
+    --morado: rgb(231, 17, 149);
+    --azul: #1968fc;
+    --blanco: #f4fffd;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: 22px;
+}
+
+/*  Header */
+.contenedor-header {
+    background-image: url(../img/fondo-quito.jpg);
+}
