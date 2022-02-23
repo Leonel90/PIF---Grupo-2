@@ -161,7 +161,7 @@ p{
     z-index: 100;
     transition: transform .3s .2s;
 }
-.showimagen{
+.showImagen{
     transform: scale(1);
 }
 #close {
