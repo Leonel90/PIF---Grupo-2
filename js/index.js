@@ -1,4 +1,4 @@
-//variables
+//variables para header
 const altura = document.body.scrollHeight - window.innerHeight; //accedemos al scrol del tamaño completo y restamos el alto
 const fondo = document.getElementById("fondo"); //accedemos al id de fondo 
 
