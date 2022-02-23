@@ -7,10 +7,12 @@
 }
 :root {
     --naranja: #ff8800;
-    --rojo: rgba(233, 67, 67, 0.89);
     --morado: rgba(214, 55, 153, 0.808);
     --azul: #1968fc;
     --blanco: #f4fffd;
+	--morado-oscuro: #33032d;
+    --morado-claro: #531253;
+    --gris: #eaeaea;
 }
 
 body {
@@ -87,7 +89,7 @@ p{
 }
 .subtitulo {
     font-size: 22px;
-    color: var(--blanco);
+    color: var(--azul);
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     z-index: 2; 
@@ -95,7 +97,7 @@ p{
     margin-bottom: 20px;
 }
 .subtitulo span{
-    background-color: var(--azul);
+    background-color: var(--gris);
     padding: 0 15px;
     z-index: 99;
     position: relative; /*Para que se aplique el el z index */
