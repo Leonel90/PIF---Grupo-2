@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans:ital@1&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-::root {
+:root {
     --naranja: #ff8800;
     --rojo: rgba(233, 67, 67, 0.89);
     --morado: rgb(231, 17, 149);
@@ -21,5 +23,59 @@ p{
 
 /*  Header */
 .contenedor-header {
+    width: 100%;
+    height: 100vh;
     background-image: url(../img/fondo-quito.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor-header .fondo {
+    width: 0%; /*Ocultamos este fondo para que cuando scrole el usuario se vea*/
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../img/QUITO.png);
+    background-position: center;
+    background-size: cover;
+}
+.contenedor-header .titulo {
+    width: calc(100vw - 20px); /*funcion calc para calcular y quitar errores del navegador*/
+    height: 100vh;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(68, 0, 255);
+    mix-blend-mode: multiply;  /*Multiplica el color y lo hace trasparente*/
+}
+/*MENU*/
+.menu{
+    background-color: var(--naranja);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 60px;
+}
+.menu a{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26px;
+    background-color: var(--naranja);
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: var(--blanco);
+    text-decoration: none;
+}
+.menu a:hover {
+    transform: translateY(18px);
+    background-color: #ff8800;
 }
