@@ -8,7 +8,7 @@
 :root {
     --naranja: #ff8800;
     --rojo: rgba(233, 67, 67, 0.89);
-    --morado: rgb(231, 17, 149);
+    --morado: rgba(214, 55, 153, 0.808);
     --azul: #1968fc;
     --blanco: #f4fffd;
 }
@@ -69,7 +69,6 @@ p{
     display: inline-block;
     padding: 10px 30px;
     font-size: 26px;
-    background-color: var(--naranja);
     margin: 0 10px;
     transition: .5s ease all;
     color: var(--blanco);
@@ -78,4 +77,43 @@ p{
 .menu a:hover {
     transform: translateY(18px);
     background-color: #ff8800;
+    border-bottom: 1px solid black;
+    letter-spacing: 3px;
+
+}
+/*main que ofrecemos*/
+.ofrecemos{
+    margin-bottom: 60px;
+}
+.subtitulo {
+    font-size: 22px;
+    color: var(--blanco);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    z-index: 2; 
+    text-transform: uppercase; /*todo a mayusculas*/
+    margin-bottom: 20px;
+}
+.subtitulo span{
+    background-color: var(--azul);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative; /*Para que se aplique el el z index */
+}
+.subtitulo::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--naranja);
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+.ofrecemos .titulo {
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
 }
