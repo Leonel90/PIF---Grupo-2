@@ -71,7 +71,7 @@ p{
 }
 .menu a:hover {
     transform: translateY(18px);
-    background-color: #ff8800;
+    background-color: #ff8800b2;
     border-bottom: 1px solid black;
     letter-spacing: 3px;
 }
