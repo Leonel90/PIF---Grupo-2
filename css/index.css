@@ -27,9 +27,10 @@ p{
 .contenedor-header {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/ciudad\ de\ quito.webp);
+    background-image: url(../img/carolina.jpg);
     background-position: center;
     background-size: cover;
+    
 }
 
 .contenedor-header .fondo {
@@ -43,16 +44,13 @@ p{
 .contenedor-header .titulo {
     width: calc(100vw - 20px); /*funcion calc para calcular y quitar errores del navegador*/
     height: 100vh;
-    letter-spacing: 4px;
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 500;
     font-family: 'Noto Sans', sans-serif;
     display: flex;
     align-items: center;
-    background-color: var(--gris);
     justify-content: center;
-    color: purple;
-    mix-blend-mode: multiply;  /*Multiplica el color y lo hace trasparente*/
+    color: var(--blanco);
 }
 
 /*MENU*/
