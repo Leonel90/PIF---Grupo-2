@@ -54,6 +54,28 @@ p{
 }
 
 /*MENU*/
+.nav-inicio {
+    background: none;
+    box-shadow: none;  
+}
+.nav-wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    width: 90vw;
+}
+.nav-wrapper .brand-logo {
+    color: black;
+    font-weight: lighter;
+}
+.menu-nav a{
+    color: black;
+}
+.menu-nav a:hover{
+    background-color: var(--naranja);
+    color: var(--blanco)
+}
+
 .menu{
     background-color: var(--naranja);
     width: 100%;
@@ -83,6 +105,35 @@ p{
     letter-spacing: 3px;
 }
 /*main que ofrecemos*/
+
+.main-inicio .contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 95vw;
+    align-items: center;
+    margin-left: 25px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.abosulute-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.abosulute-title h3{
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute;
+    color: rgba(0, 0, 0, .2);
+}
+.main-inicio img{
+    max-width: 100%;
+}
+.main-inicio p {
+    margin-bottom: 10px;
+}
+  
+
 .ofrecemos{
     margin-bottom: 60px;
 }
