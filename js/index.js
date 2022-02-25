@@ -23,4 +23,30 @@ window.addEventListener('load', () => {
             }
         });
     });
-})
+    //agrandar imagene 
+    const overlay = document.getElementById('overlay');
+    document.querySelectorAll('.grid .item img').forEach((elemento) => { //pide que entre donde esta la img dentro de la clase grid item
+        const ruta = elemento.getAttribute('src');
+        const descripcion = elemento.parentNode.parentNode.dataset.description;
+
+        elemento.addEventListener('click', () => {
+            overlay.classList.add('visible');
+            document.querySelector('#overlay img').src = ruta;
+            document.querySelector('#overlay .descripcion-img').innerHTML = descripcion;
+        });
+    });   
+    //codigo de cerrar la imagen
+
+    document.querySelector('#boton').addEventListener('click', () => {
+        overlay.classList.remove('visible');
+    });
+
+    overlay.addEventListener('click', (evento) => {
+        if ( evento.target.id === 'overlay') {
+            overlay.classList.remove('visible');
+        } 
+        
+    });
+});
+
+

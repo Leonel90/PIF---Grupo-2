@@ -53,7 +53,7 @@ p{
     position: sticky;
     top: 0;
     padding: 5px;
-    z-index: 950;
+    z-index: 55;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -74,6 +74,9 @@ p{
     background-color: #ff8800b2;
     border-bottom: 1px solid black;
     letter-spacing: 3px;
+}
+.menu.show{
+    opacity: 0;
 }
 /*main*/
 .main-inicio .contenedor{
@@ -179,7 +182,7 @@ p{
 .subtitulo span{
     background-color: var(--gris);
     padding: 0 15px;
-    z-index: 99;
+    z-index: 40;
     position: relative; /*Para que se aplique el el z index */
 }
 /*linea de los subtitulos*/
@@ -241,4 +244,48 @@ p{
     width: 300px;
     vertical-align: top; 
     object-fit: cover;
+}
+
+/*Overlay agrandar img*/
+
+.fondo-img{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /*flex-direction: column; para poner el texto debajo de la img*/ 
+    z-index: 99;
+}
+.fondo-img.visible {
+    display: flex;
+}
+.fondo-img img {
+    max-width: 100%;
+}
+.fondo-img .descripcion-img {
+    display: block;
+    background: var(--blanco);
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+.fondo-img #boton {
+	background: none;
+	font-size: 20px;
+	color: var(--blanco);
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+    z-index: 100;
 }
