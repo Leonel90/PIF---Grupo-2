@@ -24,3 +24,9 @@ const aparecerImagen = (Imagen)=>{
     menu.style.opacity = '0'
 
 }
+
+const grid =  new Muuri('.grid',{
+    layout: {
+        rounding: false
+    }
+});

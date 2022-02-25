@@ -202,6 +202,46 @@ p{
 }
 
 /*Galeria*/
+.contenedor-categorias{
+    padding: 40px 0;
+}
+.contenedor-categorias .categoria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contenedor-categorias .categoria a{
+    color: var(--naranja);
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.contenedor-categorias .categoria a.activo{
+    color: #000;
+}
+/*Galeria grid*/
+.grid {
+    position: relative; /*para que funcione bien el grid*/
+    width: 100%;
+
+}
+.grid .item {
+    position: absolute;
+    display: block;
+    padding: 1;
+    margin: 10px;
+    width: calc(33.33% - 20px); /*calculo para ajustar las imagenes*/
+}
+.grid .item-contenido {
+    position: relative;
+}
+.grid .item img {
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    vertical-align: top;
+    object-fit: cover;
+}
 .galeria{
     background: var(--gris);
 }
