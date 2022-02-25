@@ -109,6 +109,60 @@ p{
 .main-inicio  {
     text-align: center;
 }
+/*Slider img rotar*/
+
+.img-rotar{
+    padding-top: 80px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;  /*Sirve para ocultar lo que esta fuera del elemento principal*/
+}
+.img-rotar ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite; /*animacion en secuencia*/
+    animation-direction: alternate; /* para que regrese la animacion en orde*/
+    animation-timing-function: ease-in;
+}
+.img-rotar li{
+    width: 100%;
+    list-style: none;
+}
+.img-rotar img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    animation: escalado 5.5s infinite alternate;
+}
+@keyframes escalado {
+    to{
+        transform: scale(1);
+    }
+    from {
+        transform: scale(1.05);
+    }
+}
+.img-rotar img:hover {
+    filter: brightness(110%);
+
+}
+@keyframes cambio {
+    0% {margin-left: 0;}   /*duracion*/
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}  /*tiempo de cambio 1 segundo*/
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
 /*Section container*/
 .ofrecemos{
     margin-bottom: 60px;
