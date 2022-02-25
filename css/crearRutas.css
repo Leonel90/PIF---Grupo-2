@@ -8,7 +8,7 @@
 body {
     background: #000000;/*Color del fondo de la pagina*/
     color: #ffffff;/*Color del texto de la pagina*/
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     font-size: 16px;/*Tamaño de la funte de la pagina*/
     font-family: 'Oswald', sans-serif;/*Fuente de la pagina*/
 }
@@ -39,7 +39,7 @@ ul {
 }
 
 .nav-brand {
-    width: 150px;/*tamaño del logo o imagen*/
+    width: 70px;/*tamaño del logo o imagen*/
 }
 
 /*NAVEGACION IZQUIERDA----> nav left*/
@@ -52,7 +52,87 @@ ul {
     padding: 10px;/*separamos los li o columnas*/
 }
 
+.nav-main ul li a {
+    padding: 2px;/*asi ponemos espaciado en las opciones*/
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #ffffff;/*asi colocamos un efecto al pasar el mouse x las opciones*/
+}
+
 .nav-main ul.nav-menu {
-    flex: 1;
+    flex: 1;/*para colocar al inicio*/
     margin-left: 10px;/*para separar las opciones del logo*/
+}
+
+
+/*SHOWCASE - imagen principal de la pagina*/
+
+hr {
+    margin: 10px 0;/*separar el hr de las opciones y de  la imagen o showcase*/
+}
+
+.showcase {
+    width: 100%;/*Ancho del espacio de la imagen o espacio del showcase*/
+    height: 550px;/*alto del espacio del elemento*/
+    background: url(/img/img-cRutas1.jpg) no-repeat center center/cover;/*Llamamos asi la imagen la centramos, evitamos q no se repita en el mismo lugar y q ocupe todo el espacio*/
+    padding-bottom: 50px;/*separa de los elementos q se encuentran arriba*/
+    margin-bottom: 20px;/*margen interno*/
+    display: flex;/*sirve para centrar el texto q tenemos dentro del showcase*/
+    flex-direction: column;/*para ubicar al texto debajo y centrado*/
+    align-items: center;/*centramos el texto*/
+    justify-content: flex-end;/*para colocarlo en la parte de abajo*/
+}
+
+.btn {
+    cursor: pointer;/*para comvertirle a boton*/
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    opacity: 0.9;/*cambia de color al colocar el mouse encima*/
+}
+
+.showcase h2,
+.showcase p {
+    margin-bottom: 10px;/*para q el texto no este tan pegado*/
+}
+
+/*NOTICIAS DE TURISMO O new cards*/
+
+.news-cards {
+    display: grid;/*asi vamos a utilizar las grillas de CSS*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;/*asi podemos colocar en columnas*/
+    gap: 25px;/*espaciado entre cada columna*/
+    margin: 10px 0;/*margen interno de las columnas*/
+}
+
+.news-cards img {
+    width: 100%;/*para adaptar las imagenes q no se vena muy grandes*/
+    height: 180px;/*altura de las img*/
+}
+
+.news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-cards a {
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news-cards a:hover {
+    text-decoration: underline;
 }
