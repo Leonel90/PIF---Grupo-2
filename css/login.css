@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --naranja: #ff8800;
+    --morado: rgba(214, 55, 153, 0.808);
+    --azul: #1968fc;
+    --blanco: #f4fffd;
+	--morado-oscuro: #33032d;
+    --morado-claro: #531253;
+    --gris: #eaeaea;
+}

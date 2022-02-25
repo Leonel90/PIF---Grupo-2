@@ -75,7 +75,7 @@ p{
     border-bottom: 1px solid black;
     letter-spacing: 3px;
 }
-/*main que ofrecemos*/
+/*main*/
 .main-inicio .contenedor{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
