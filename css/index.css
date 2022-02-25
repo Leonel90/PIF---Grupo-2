@@ -233,13 +233,13 @@ p{
     width: calc(33.33% - 20px); /*calculo para ajustar las imagenes*/
 }
 .grid .item-contenido {
-    position: relative;
+    position: relative; /*Importante para la libreria*/
 }
 .grid .item img {
     cursor: pointer;
     height: 300px;
     width: 300px;
-    vertical-align: top;
+    vertical-align: top; 
     object-fit: cover;
 }
 .galeria{
