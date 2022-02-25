@@ -34,6 +34,7 @@ const grid =  new Muuri('.grid',{
 window.addEventListener('load', () => {
     grid.refreshItems().layout();
 
+    //codigo para filtrar las categorias con listener
     const enlaces = document.querySelectorAll('#categorias a');
     enlaces.forEach((elemento) => {
         elemento.addEventListener('click', (evento) =>{
