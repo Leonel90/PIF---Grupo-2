@@ -8,84 +8,47 @@
     <title>CUENTA</title>
 </head>
 <body>
-    <div class="formulario">
-      
-        <ul class="tab-grupo">
-          <li class="tab activar"><a href="#signup">Crear Cuenta</a></li>
-          <li class="tab"><a href="#login">Iniciar Sesion</a></li>
-        </ul>
-        
-        <div class="tab-content">
-          <div id="signup">   
-            <h1>Crear Cuenta</h1>
-            
-            <form action="/" method="post">
-            
-            <div class="top-row">
-              <div class="field-wrap">
-                <label>
-                  Nombre<span class="req">*</span>
-                </label>
-                <input type="text" required autocomplete="off" />
-              </div>
-          
-              <div class="field-wrap">
-                <label>
-                  Apellido<span class="req">*</span>
-                </label>
-                <input type="text"required autocomplete="off"/>
-              </div>
+    <div class="contenedor">
+        <div class="caja-atras">
+          <div class="loginMsg">
+            <div class="textcontent">
+              <p class="title">¿No tienes una cuenta? </p>
+              <p>Regístrese fratis ahora </p>
+              <button id="switch1">Crear Cuenta</button>
             </div>
-  
-            <div class="field-wrap">
-              <label>
-                Email<span class="req">*</span>
-              </label>
-              <input type="email"required autocomplete="off"/>
-            </div>
-            
-            <div class="field-wrap">
-              <label>
-                Contraseña<span class="req">*</span>
-              </label>
-              <input type="password"required autocomplete="off"/>
-            </div>
-            
-            <button type="submit" class="button button-block"/>Crear</button>
-            
-            </form>
-  
           </div>
-          
-          <div id="login">   
-            <h1>Iniciar Cuenta</h1>
-            
-            <form action="/" method="post">
-            
-              <div class="field-wrap">
-              <label>
-                Email<span class="req">*</span>
-              </label>
-              <input type="email"required autocomplete="off"/>
+          <div class="signupMsg visibility">
+            <div class="textcontent">
+              <p class="title">¿Ya tienes una cuenta?</p>
+              <p>Inicia sesión para ver todas las rutas </p>
+              <button id="switch2">Inicar sesión</button>
             </div>
-            
-            <div class="field-wrap">
-              <label>
-                Contraseña<span class="req">*</span>
-              </label>
-              <input type="password"required autocomplete="off"/>
-            </div>
-            
-            <p class="forgot"><a href="#">¿Has olvidado tu contraseña ?</a></p>
-            
-            <button class="button button-block"/>Ingresar</button>
-            
-            </form>
-  
           </div>
-          
-        </div><!-- tab-content -->
-        
-  </div> <!-- /form -->
+        </div>
+        <!-- Login Cuenta -->
+    
+        <div class="frontbox">
+          <div class="login">
+            <h2>Inicar Cuenta</h2>
+            <div class="inputbox">
+                <input type="text" name="Correo" placeholder="  EMAIL">
+                <input type="password" name="Contraseña" placeholder="  PASSWORD">
+            </div>
+            <p>¿OLVIDADASTES TU CONTRASEÑA? </p>
+            <button>ENTRAR</button>
+          </div>
+    
+          <div class="signup hide">
+            <h2>Crear Cuenta</h2>
+            <div class="inputbox">
+              <input type="text" name="Nombres" placeholder="  NAME">
+              <input type="text" name="Correo" placeholder="  EMAIL">
+              <input type="password" name="Contraseña" placeholder="  PASSWORD">
+            </div>
+            <button>CREAR</button>
+          </div>
+    
+        </div>
+      </div>
 </body>
 </html>
