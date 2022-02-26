@@ -299,6 +299,85 @@ p{
     z-index: 100;
 }
 
+/*FOOTER pie de pagina*/
+footer .redes-sociales {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 15px;
+	flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #000;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+	border-radius: 100px;
+	transition: .3s ease all;
+}
+
+.redes-sociales .twitter {background: #1da1f2;}
+.redes-sociales .facebook {background: #3b5998;}
+.redes-sociales .instagram {background: #c13584;}
+
+footer .redes-sociales a i {
+	font-size: 20px;
+	line-height: 60px;
+}
+
+footer .contenedor-icono:hover a {
+	animation: iconos .5s ease;
+}
+
+@keyframes iconos {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg); /*en que sentido rota*/
+	}
+}
+
+footer .creador {
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #c13584;
+}
+
+footer .creador a {color: #000;}
+footer .creador a:hover {text-decoration: underline;}
+/*media queris adaptar diferente pantallas*/
+
+@media screen and (max-width: 950px) {
+	.grid .item {
+		width: calc(50% - 20px);
+	}
+    .abosulute-title h3{
+        font-size: 4em;
+        font-weight: bold;
+        position: absolute;
+        color: rgba(0, 0, 0, .2);
+    }
+    .main-inicio img{
+        max-width: 80%;
+        border-radius: 15%;
+    }
+    .main-inicio p {
+        margin-bottom: 8px;
+    }
+    .img-rotar img {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        animation: escalado 5.5s infinite alternate;
+    }
+
+}
 
 div.efecto {
   position: relative;
