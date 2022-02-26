@@ -310,8 +310,8 @@ footer .redes-sociales {
 
 footer .redes-sociales a {
 	display: block;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	background: #000;
 	color: #fff;
 	margin: 20px;
@@ -325,8 +325,8 @@ footer .redes-sociales a {
 .redes-sociales .instagram {background: #c13584;}
 
 footer .redes-sociales a i {
-	font-size: 20px;
-	line-height: 60px;
+	font-size: 25px;
+	line-height: 50px;
 }
 
 footer .contenedor-icono:hover a {
