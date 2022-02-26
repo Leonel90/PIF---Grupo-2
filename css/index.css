@@ -179,12 +179,14 @@ p{
     text-transform: uppercase; /*todo a mayusculas*/
     margin-bottom: 20px;
 }
+
 .subtitulo span{
     background-color: var(--gris);
     padding: 0 15px;
     z-index: 40;
     position: relative; /*Para que se aplique el z index */
 }
+
 /*linea de los subtitulos*/
 .subtitulo::after {
     content: "";
