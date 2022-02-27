@@ -65,6 +65,15 @@ ul {
     margin-left: 10px;/*para separar las opciones del logo*/
 }
 
+.menu-btn {
+    position: absolute;
+    cursor: pointer;/*Para simular q se a un boton y aparaesca en cursor*/
+    top: 15px;
+    right: 15px;/*colocamos a la derecha*/
+    z-index: 2;/*para asegurarnos de q siempres este encima*/
+    display: none;/*para ocultar icono de la barra*/
+}
+
 
 /*SHOWCASE - imagen principal de la pagina*/
 
@@ -76,7 +85,7 @@ hr {
     width: 100%;/*Ancho del espacio de la imagen o espacio del showcase*/
     height: 550px;/*alto del espacio del elemento*/
     background: url(/img/img-cRutas1.jpg) no-repeat center center/cover;/*Llamamos asi la imagen la centramos, evitamos q no se repita en el mismo lugar y q ocupe todo el espacio*/
-    padding-bottom: 50px;/*separa de los elementos q se encuentran arriba*/
+    padding: 50px;/*separa de los elementos q se encuentran arriba*/
     margin-bottom: 20px;/*margen interno*/
     display: flex;/*sirve para centrar el texto q tenemos dentro del showcase*/
     flex-direction: column;/*para ubicar al texto debajo y centrado*/
@@ -136,3 +145,162 @@ hr {
 .news-cards a:hover {
     text-decoration: underline;
 }
+
+/*ESTILOSDE BANER - Cards banner one*/
+
+.cards-banner-one {
+    width: 100%;
+    height: 350px;
+    background: url('/img/img-cRutas6.png') no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+
+.cards-banner-one .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #ffffff;
+}
+
+.cards-banner-one p,
+.cards-banner-one h2{
+    margin: 10px 0 20px 0;
+}
+
+/*ESTILOSDE BANER DOS- Cards banner two*/
+
+.cards-banner-two {
+    width: 100%;
+    height: 350px;
+    background: url('/img/img-cRutas7.jpg') no-repeat center center/cover;
+}
+
+.cards-banner-one .content {
+    width: 50%;
+    padding: 100px 0 0 30px;
+    color: #ffffff;
+}
+
+/*seccion redes sociales*/
+.social {
+    margin: 50px;
+}
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+/*footer limks - pie de pagina de los links sociales*/
+.footer-links {
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+}
+
+.footer-container ul li {
+    line-height: 2.8;
+}
+
+/*footer - Estilos de pie de pagina de
+ la informnacion de redes sociales*/
+ .footer {
+     background-color: #2f3640;
+     color: #616161;
+     font-size: 12px;
+     padding: 20px 0;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+
+ /*Estilos responsive para moviles*/
+ @media (max-width: 700px) {
+
+    .menu-btn {
+        display: block;
+    }
+     .nav-main ul.nav-menu{/*estilos de la barra navegadora de opciones*/
+         display: block;/*para estilo bloque*/
+         position: absolute;/*para posicionarlo encima de todo*/
+         top: 0;/*para pocisionarlo en la esquina*/
+         left: 0;/*para q este en la isquierda*/
+         background: #2f3640;
+         height: 100%;/*altura q ocupa la barra de navegacion*/
+         padding: 30px;
+         opacity: .9;
+         transform: translateX(-400px);/*para quitar el espaciado q deja*/
+         transition: transform .5s ease-in-out;
+     }
+
+     .nav-main ul.nav-menu.show {/*Para q aparesca y desaparesca la barra*/
+        transform: translateX(-20px);
+     }
+
+     .nav-main ul.nav-menu li {
+         padding: 20px;
+         font-size: 14px;
+     }
+
+     .nav-main ul.nav-menu-rigth {
+         margin-right: 40px;/*para separar la del icono de buscar*/
+     }
+
+     .news-cards{
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .cards-banner-one content,
+     .cards-banner-two .content {
+         width: 80%;
+     }
+
+     .footer-links .footer-container {
+         grid-template-columns: repeat(2, 1fr);
+     }
+ }
+
+ @media (max-width: 500px){
+     .news-cards {
+         grid-template-columns: 1fr;
+     }
+
+     .news-cards img {
+         height: 270px;
+     }
+
+     .cards-banner-one .content,
+     .cards-banner-two .content {
+         width: 100%;
+         padding: 60px 20px;
+     }
+
+     .footer-links .footer-container {
+         grid-template-columns: 1fr;
+     }
+ }
