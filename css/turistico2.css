@@ -39,9 +39,11 @@
   width: 90vw;
 }
 .nav-wrapper .brand-logo {
-  color: var(--blanco);
-  font-weight: lighter;
+  width: 65px;
+  height: 65px;
+  padding: 5px;
 }
+
 .menu-nav a {
   color: rgb(255, 255, 255);
 }
@@ -116,7 +118,8 @@
   margin: 0 auto;
 }
 .acerca-img {
-  width: 40px;
+  width: 60px;
+  height: 60px;
 }
 .info {
   background-color: #e5e5f7;
