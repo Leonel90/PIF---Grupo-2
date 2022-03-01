@@ -249,7 +249,6 @@ p{
 }
 .grid img:hover {
     filter: brightness(150%);
-
 }
 
 /*Overlay agrandar img*/
@@ -275,7 +274,6 @@ p{
 .fondo-img img {
     height: 450px;
     width: 450px;
-    
     object-fit: cover;
 }
 .fondo-img .descripcion-img {
