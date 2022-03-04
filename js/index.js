@@ -28,16 +28,17 @@ window.addEventListener('load', () => {
     document.querySelectorAll('.grid .item img').forEach((elemento) => { //pide que entre donde esta la img dentro de la clase grid item
         const ruta = elemento.getAttribute('src');
         const descripcion = elemento.parentNode.parentNode.dataset.description;
-        const link = elemento.getAttribute('href');
+        const link = elemento.getAttribute("href");
 
         elemento.addEventListener('click', () => {
             overlay.classList.add('visible');
             document.querySelector('#overlay img').src = ruta;
             document.querySelector('#overlay .descripcion-img').innerHTML = descripcion;
-            document.querySelector('#overlay .bot').href = link;
+            document.querySelector('#overlay a').href = link;
         });
 
     });
+   
     
     //codigo de cerrar la imagen
 
