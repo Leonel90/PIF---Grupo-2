@@ -1,56 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
-    <title>CUENTA</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bienveninos</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css" media="screen" />
+  </head>
+  <body>
     
-</head>
-<body>
-    <div class="contenedor">
-        <div class="caja-atras">
-          <div class="loginMsg">
-            <div class="textcontent">
-              <p class="title">¿No tienes una cuenta? </p>
-              <p>Regístrese Gratis ahora </p>
-              <button id="switch1">Crear Cuenta</button>
-            </div>
-          </div>
-          <div class="signupMsg visibility">
-            <div class="textcontent">
-              <p class="title">¿Ya tienes una cuenta?</p>
-              <p>Inicia sesión para ver todas las rutas </p>
-              <button id="switch2">Iniciar sesión</button>
-            </div>
-          </div>
-        </div>
-        <!-- Login Cuenta -->
-    
-        <div class="frontbox">
-          <div class="login">
-            <h2>Iniciar Cuenta</h2>
-            <div class="inputbox">
-                <input type="text" name="Correo" placeholder=" Correo">
-                <input type="password" name="Contraseña" placeholder=" Contraseña">
-            </div>
-            <p>¿OLVIDADASTES TU CONTRASEÑA? </p>
-            <button><a href="/index.html">ENTRAR</a></button>
-          </div>
-    
-          <div class="signup hide">
-            <h2>Crear Cuenta</h2>
-            <div class="inputbox">
-              <input type="text" name="Nombres" placeholder="  NAME">
-              <input type="text" name="Correo" placeholder="  EMAIL">
-              <input type="password" name="Contraseña" placeholder="  PASSWORD">
-            </div>
-            <button>CREAR</button>
-          </div>
-    
-        </div>
-      </div>
-      <script src="/js/login.js"></script>
-</body>
+    <div class="login-heder">
+    <h2><cente>Rutas turisticas Pichincha </cente></h2>
+  </div>
+    <div class="login-box">
+      <img src="/img/logom.jpg" class="avatar" alt="Avatar Image">
+      <h1>Bienveninos Inicio de Sesion</h1>
+      <form>
+        <label for="username">Usuario</label>
+        <input type="text" id="txtusuario" placeholder="Ingresa tu E-mail ">
+        <label for="password">Clave</label>
+        <input type="password" id="txtcontra" placeholder="Ingresa tu clave">
+        <input onclick=ir() type=buton value="Iniciar Cuenta">
+        <a href="#">Olvidaste tu contraseña</a><br>
+        <a href="#">No tienes cuenta</a><br>
+        <a href="#">Acepto las condiciones del servicio la politica de privacidad</a><br>
+        
+      </form>
+    </div>
+  </body>
 </html>
