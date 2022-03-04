@@ -64,6 +64,32 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
   z-index: -1;
 }
+.inicio1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url('../img/img-cRutas4.jpg');
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  z-index: -1;
+}
+.inicio3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url('../img/carolina.jpg');
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  z-index: -1;
+}
 .inicio-contenedor {
   max-width: 800px;
   padding: 100px 0;
@@ -79,6 +105,22 @@
 }
 .inicio-parrafo {
   margin-bottom: 20px;
+}
+.inicio1 .inicio-titulo {
+  font-size: 3rem;
+  color: var(--blanco);
+}
+.inicio1 .inicio-parrafo {
+  margin-bottom: 20px;
+  color: var(--blanco);
+}
+.inicio3 .inicio-titulo {
+  font-size: 3rem;
+  color: var(--blanco);
+}
+.inicio3 .inicio-parrafo {
+  margin-bottom: 20px;
+  color: var(--blanco);
 }
 .btn-inicio {
   display: inline-block;
@@ -145,5 +187,67 @@
 .info-parrafo{
     line-height: 1.7;
     margin-bottom: 15px;
+}
+/*FOOTER pie de pagina*/
+footer .redes-sociales {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  margin: 20px;
+  text-align: center;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+}
+
+.redes-sociales .twitter {
+  background: #1da1f2;
+}
+.redes-sociales .facebook {
+  background: #3b5998;
+}
+.redes-sociales .instagram {
+  background: #c13584;
+}
+
+footer .redes-sociales a i {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+footer .contenedor-icono:hover a {
+  animation: iconos 0.5s ease;
+}
+
+@keyframes iconos {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg); /*en que sentido rota*/
+  }
+}
+
+footer .creador {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #c13584;
+}
+
+footer .creador a {
+  color: #000;
+}
+footer .creador a:hover {
+  text-decoration: underline;
 }
 
