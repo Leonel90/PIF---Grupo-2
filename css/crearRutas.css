@@ -292,6 +292,22 @@ hr {
      }
  }
 
+ .nav-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu > li > a{
+    display: block;
+    padding: 15px 05px;
+    text-decoration: none;
+}
+/*
+.nav-menu > li:hover{
+    background-color: red;
+}*/
+
  @media (max-width: 500px){
      .news-cards {
          grid-template-columns: 1fr;
