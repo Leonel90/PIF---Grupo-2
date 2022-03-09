@@ -247,6 +247,12 @@ p {
   margin: 10px;
   width: calc(33.33% - 20px); /*calculo para ajustar las imagenes*/
 }
+.item .btn{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 15px;
+}
 .grid .item-contenido {
   position: relative; /*Importante para la libreria*/
 }
@@ -258,7 +264,7 @@ p {
   object-fit: cover;
 }
 .grid img:hover {
-  filter: brightness(150%);
+  filter: brightness(50%);
 }
 
 /*Overlay agrandar img*/
@@ -395,90 +401,4 @@ footer .creador a:hover {
     object-fit: cover;
     animation: escalado 5.5s infinite alternate;
   }
-}
-
-div.efecto {
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-}
-div.efecto *,
-div.efecto *:before,
-div.efecto *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.55s ease;
-  transition: all 0.55s ease;
-}
-div.efecto .title {
-  position: absolute;
-  top: 78%;
-  left: 25px;
-  padding: 5px 10px 10px;
-}
-div.efecto .title:before,
-div.efecto .title:after {
-  height: 2px;
-  width: 400px;
-  position: absolute;
-  content: '';
-  background-color: #ffffff;
-}
-div.efecto .title:before {
-  top: 0;
-  left: 10px;
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-div.efecto .title:after {
-  bottom: 0;
-  right: 10px;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-div.efecto .title div:before,
-div.efecto .title div:after {
-  width: 2px;
-  height: 300px;
-  position: absolute;
-  content: '';
-  background-color: #ffffff;
-}
-div.efecto .title div:before {
-  top: 10px;
-  right: 0;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-}
-div.efecto .title div:after {
-  bottom: 10px;
-  left: 0;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-div.efecto h4 {
-  margin: 0;
-  text-transform: uppercase;
-}
-div.efecto h4 {
-  display: block;
-  font-weight: 700;
-  background-color: var(--blanco);
-  padding: 5px 10px;
-  color: #000;
-}
-/* EFECTOS DE LA LINEAS*/
-div.efecto:hover .title:before,
-div.efecto.hover .title:before,
-div.efecto:hover .title:after,
-div.efecto.hover .title:after,
-div.efecto:hover .title div:before,
-div.efecto.hover .title div:before,
-div.efecto:hover .title div:after,
-div.efecto.hover .title div:after {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
 }
