@@ -87,7 +87,7 @@ hr {
     height: 500px;/*alto del espacio del elemento*/
     background: url(/img/img-cRutas1.jpg) no-repeat center center/cover;/*Llamamos asi la imagen la centramos, evitamos q no se repita en el mismo lugar y q ocupe todo el espacio*/
     padding: 0px;/*separa de los elementos q se encuentran arriba*/
-    margin-bottom: 20px;/*margen interno*/
+    margin-bottom: 40px;/*margen interno*/
     display: flex;/*sirve para centrar el texto q tenemos dentro del showcase*/
     flex-direction: column;/*para ubicar al texto debajo y centrado*/
     align-items: center;/*centramos el texto*/
@@ -305,7 +305,7 @@ hr {
 .titulo{
     text-align: center;
 }
-#formItems{
+.formItems{
 align-items: center;
 }
 
