@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/turistico2.css">
+    <link rel="stylesheet" href="/css/turistico1.css">
     <title>RUTA-TURISTICA</title>
     <!-- materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -72,9 +73,9 @@
             <div id="menu1" class="col-xs-12 col-md-6 col-lg-4">
               <div class="about-item">
                 <div class="about-text">
-                  <h3><a>Consultar</a></h3>
+                  <h3><a>RESERVAR</a></h3>
                   <p>Consulte horarios disponibles</p>
-                  <a class="btn btn btn-rm" href="#reserva" onclick="app.mostrarVuelos();">Consultar</a>
+                  <a class="btn btn btn-rm" href="#reserva" onclick="app.mostrarrutas();">Reservar</a>
                 </div>
               </div>
             </div>
@@ -91,14 +92,15 @@
             <div id="campodoc" style="display: none;">
               <form action="javascript:void(0);" method="POST" id="reserva-edit">
                 <p id="datosrutas"></p>
+                <input type="text" id="name" placeholder="Ingrese su nombre:">
                 <input type="text" id="documento" placeholder="Cedula de Ciudadania">
-                <input type="submit" value="Reservar" />
+                <input type="submit" value="Reservar" class="btn"/>
               </form>
             </div>
             <div class="row">
               <div class="col-12">
                 <table>
-                  <tbody id="vuelos"></tbody>
+                  <tbody id="rutas"></tbody>
                 </table>
               </div>
             </div>
