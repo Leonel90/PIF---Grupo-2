@@ -1,42 +1,28 @@
 //parque la carolina
 var app = new function () {
     var Ruta1 = {
-      origen: "Plaza del panecillo",
-      destino: "Monumento del panecillo",
+      origen: "Parque Nautico",
+      destino: "La carolina",
       hora: new Date(2022, 3, 09, 12),
       costobase: 500 + " $",
       reservas: []
     };
     var Ruta2 = {
-      origen: "B",
-      destino: "W",
+      origen: "Jardin Botanico de Quito",
+      destino: "Carolina",
       hora: new Date(2022, 4, 28, 7, 30),
       costobase: 450 + " $",
       reservas: []
     };
     var Ruta3 = {
-      origen: "C",
-      destino: "X",
+      origen: "Avion Fantasma",
+      destino: "Museo de Ciencias Naturales de Ecuador",
       hora: new Date(2022, 4, 21, 18),
       costobase: 600 + " $",
       reservas: []
     };
-    var Ruta4 = {
-      origen: "D",
-      destino: "Y",
-      hora: new Date(2022, 4, 28, 6, 50),
-      costobase: 550 + " $",
-      reservas: [1078]
-    };
-    var Ruta5 = {
-      origen: "E",
-      destino: "Z",
-      hora: new Date(2022, 5, 1, 19, 30),
-      costobase: 200 + " $",
-      reservas: []
-    };
     //definir los objetos dentro de un array
-    this.rutas = [Ruta1, Ruta2, Ruta3, Ruta4, Ruta5];
+    this.rutas = [Ruta1, Ruta2, Ruta3];
   
     //motrar todas las rutas disponibles con el array y obetos
     this.mostrarrutas = function () {
