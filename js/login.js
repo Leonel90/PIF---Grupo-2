@@ -95,24 +95,44 @@ formulario_register.addEventListener("submit", e => {
         warnings += `La contraseña no es valida <br/>`
         registrar = true
     }
-    if(registrar){
+    if (registrar) {
         parrafo.innerHTML = warnings
-    }else{
+    } else {
         parrafo.innerHTML = "Registrado correctamente"
         formulario_register.reset()
     }
 })
 
 // INGRESO MEDIANTE EL LOGIN Y CORREO
-function login(){
-    var user,pass;
+/*Roles:
+1:admin,
+2:cliente
+*/
 
-    user = document.getElementById('usuario').value
-    pass = document.getElementById('contraseña').value
+function obtenerListaUsuarios() {
+    var listaUsuarios = JSON.parse(localStorage.getItem('listaUsuariosLs'));
 
-    if (user == "Leonel123" && pass == "123456789") {
-        window.location = "/index.html"
-    } else {
-        
+    if (listaUsuarios == null) {
+        listaUsuarios =
+            [
+                //id, nombre,apellido,correo                contraseña, fecha nacido, rol
+                ['1','Leonel','Sangolquiza','leonel28@hotmail.com','123456789*','2005-10-15','1'],
+                ['2','Leonel','Sangolquiza','leonel28@hotmail.com','123456789','2008-10-15','2']
+            ]
     }
+    return listaUsuarios;
+}
+
+function verificarCredenciales(Puser, Ppass) {
+    var listaUsuarios = obtenerListaUsuarios();
+    var bAcceso = false;
+
+    for (var i = 0; i < listaUsuarios.length; i++) {
+        if (Puser == listaUsuarios[i][3] && Ppass == listaUsuarios[i][4]) {
+            bAcceso = true
+            sessionStorage.setItem('usuarioActivo',listaUsuarios[i][1] + ' ' + listaUsuarios[i][2]);
+            sessionStorage.setItem('rolUsuarioActivo',listaUsuarios[i][6]);
+        }
+    }
+    return bAcceso;
 }
