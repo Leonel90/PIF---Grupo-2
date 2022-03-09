@@ -1,3 +1,32 @@
-*{
-    background: black;
+.contenedortr {
+    width: 90%;
+    overflow: hidden;
+    padding-left: 50px;
+    background-image: url(/img/parquecarolina.jpg);
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: 1s ease-in-out;
+}
+.contenedortr:hover{
+    letter-spacing: 1px;
+    transform:translate3d(1px);
+}
+#datosrutas{
+    border: 1px solid black;
+    width: 90%;
+    overflow: hidden;
+    padding-left: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: 1s ease-in-out;
+}
+.consulata{
+    border: 1px solid black;
+    width: 90%;
+    overflow: hidden;
+    padding-left: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: 1s ease-in-out;
 }
