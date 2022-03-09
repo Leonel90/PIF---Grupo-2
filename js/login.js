@@ -91,10 +91,12 @@ div.addEventListener("submit", e => {
     }
 
     if (password.value.length < 8) {
-        warnings += `la contraseña no es valida <br/>`
+        warnings += `La contraseña no es valida <br/>`
         entrar = true
     }
     if(entrar){
         parrafo.innerHTML = warnings
+    }else{
+        parrafo.innerHTML = "Registrado correctamente"
     }
 })
