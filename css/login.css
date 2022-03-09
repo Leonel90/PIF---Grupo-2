@@ -7,7 +7,9 @@
 }
 
 body{
-  background-image: url(/img/L4.jpg);
+  background-image: url(/img/Quito.jpg);
+  width: 100%;
+  height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
