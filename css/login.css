@@ -150,6 +150,15 @@ main{
   font-size: 12px;
 }
 
+.warnings1{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #c52020;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
 
 
 @media screen and (max-width: 850px){

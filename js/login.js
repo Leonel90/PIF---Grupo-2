@@ -69,34 +69,50 @@ const password = document.getElementById("password")
 const div = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
-div.addEventListener("submit", e => {
+
+formulario_register.addEventListener("submit", e => {
     e.preventDefault()
     let warnings = ""
-    let entrar = false
+    let registrar = false
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     parrafo.innerHTML = ""
 
     if (nombre.value.length < 10) {
         warnings += `El nombre ingresado no es válido <br/>`
-        entrar = true
+        registrar = true
     }
     if (!regexEmail.test(email.value)) {
         warnings += `El email no es valido <br/>`
-        entrar = true
+        registrar = true
     }
 
     if (usuario.value.length < 6) {
         warnings += `El nombre d usuario no es valido <br/>`
-        entrar = true
+        registrar = true
     }
 
     if (password.value.length < 8) {
         warnings += `La contraseña no es valida <br/>`
-        entrar = true
+        registrar = true
     }
-    if(entrar){
+    if(registrar){
         parrafo.innerHTML = warnings
     }else{
         parrafo.innerHTML = "Registrado correctamente"
+        formulario_register.reset()
     }
 })
+
+// INGRESO MEDIANTE EL LOGIN Y CORREO
+function login(){
+    var user,pass;
+
+    user = document.getElementById('usuario').value
+    pass = document.getElementById('contraseña').value
+
+    if (user == "Leonel123" && pass == "123456789") {
+        window.location = "/index.html"
+    } else {
+        
+    }
+}

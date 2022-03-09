@@ -33,18 +33,19 @@
                     <!--Login-->
                     <form action="" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
-                        <button>Entrar</button>
+                        <input type="text" placeholder="Usuario" id="usuario">
+                        <input type="password" placeholder="Contraseña" id="contraseña">
+                        <button onclick="login()" >Entrar</button>
+                        <p class="warnings1" id="warnings1"></p>
                     </form>
 
                     <!--Register-->
                     <form action="" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre y Apellido" id="name" required>
-                        <input type="text" placeholder="Correo Electrónico" id="email" required>
-                        <input type="text" placeholder="Usuario" id="usuario" required>
-                        <input type="password" placeholder="Contraseña" id="password" required>
+                        <input type="text" placeholder="Nombre y Apellido" id="name">
+                        <input type="text" placeholder="Correo Electrónico" id="email">
+                        <input type="text" placeholder="Usuario" id="usuario">
+                        <input type="password" placeholder="Contraseña" id="password">
                         <button type="submit">Regístrarse</button>
                         <p class="warnings" id="warnings"></p>
                     </form>
