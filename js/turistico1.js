@@ -26,6 +26,8 @@ var app = new function () {
   
     //motrar todas las rutas disponibles con el array y obetos
     this.mostrarrutas = function () {
+
+      //cal la hora y minutos e imprimir las rutas disponibles
       var data = '<br>';
       if (this.rutas.length > 0) {
         for (i = 0; i < this.rutas.length; i++) {
@@ -40,7 +42,7 @@ var app = new function () {
       document.getElementById('rutas').innerHTML = data;
       document.getElementById('rutas').style.display = 'block';
     };
-  
+  //creamos como estilos para que se alamecen los datos de la ruta selecionada
     this.Reservar = function (item) {
       var el = document.getElementById('documento');
       document.getElementById('documento').value = "";
@@ -117,7 +119,7 @@ var app = new function () {
         }
       }
     };
-  
+  //se cierran todo los estilos que estan
     this.Volver = function () {
       document.getElementById('datosrutas').style.display = 'none';
       document.getElementById('campodoc').style.display = 'none';
