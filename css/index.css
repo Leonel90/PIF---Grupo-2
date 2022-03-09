@@ -411,3 +411,7 @@ footer .creador a:hover {
     animation: escalado 5.5s infinite alternate;
   }
 }
+option{
+  text-decoration: none;
+  
+}
