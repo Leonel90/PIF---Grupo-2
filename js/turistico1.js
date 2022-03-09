@@ -1,3 +1,4 @@
+//mitad del mundo
 var app = new function () {
     var Ruta1 = {
       origen: "Plaza del panecillo",

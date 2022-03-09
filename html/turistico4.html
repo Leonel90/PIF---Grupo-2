@@ -11,12 +11,15 @@
 
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="/css/style.css">
+    
 
     <!-- Fuentes -->
     <!--<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     -->
     <!-- Iconos "Iconicons"-->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <script src="/js/turistico4.js"></script>
 
     <title>Página web</title>
   </head>
@@ -84,16 +87,52 @@
         </div>
     </main>
 
-    <!---------------------- Contenido #1 ---------------------->  
-    <section class="py-6">
+    <!---------------------- Reserva #1 ---------------------->  
+    <section id="reserva">
         <div class="container">
-            <div class="text-center w-75 mx-auto mb-5">
-                <h1 class="display-4 mb-3">¿Que conoceras en esta ruta?</h1>
-                <p class="lead text-muted mb-5">Todo lo necesario para llevarte una experiencia increible sobre este lugar</p>
-                <a href="#" class="btn-inicio">Entra ya</a>
-            </div>  
+          <div class="row">
+            <h1 class="section-title">RESERVAS DE RUTAS</h1>
+          </div>
+          <div class="row">
+            <div id="menu1" class="col-12 col-lg-9 ">
+              <div class="about-item">
+                <div class="about-text">
+                  <h3><a>Reservar tu rutas del PANECILLO</a></h3>
+                  <p>Consulte horarios disponibles</p>
+                  <a class="btn btn btn-rm" href="#reserva" onclick="app.mostrarrutas();">Reservar</a>
+                </div>
+              </div>
+            </div>
+            <div id="menu2" class="col-xs-12 col-md-6 col-lg-4">
+              <div class="about-item">
+                <div class="about-text">
+                  <h3><a>Consulta tus rutas programadas</a></h3>
+                  <p>Consulte sus reservas por número de cédula</p>
+                  <input id="docConsulta" class="mb-20 form-control" name="cedula" placeholder="Ingresa tu número de cédula">
+                  <a class="btn btn-common btn-rm" href="#reserva" onclick="app.consultarReserva();">Consultar</a>
+                </div>
+              </div>
+            </div>
+            <div id="campodoc" style="display: none;">
+              <form action="javascript:void(0);" method="POST" id="reserva-edit">
+                <p id="datosrutas"></p>
+                <input type="text" id="name" placeholder="Ingrese su nombre:">
+                <input type="text" id="documento" placeholder="Cedula de Ciudadania">
+                <input type="submit" value="Reservar" class="btn"/>
+              </form>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <table>
+                  <tbody id="rutas"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <br>
+          <a id="btnback" style="display: none;" href="#" class="btn btn-common btn-rm" onclick="app.Volver();">Volver</a>
         </div>
-    </section>
+      </section>
 
     <!---------------------- Contenido #2 ---------------------->
     <main class="contenido2">

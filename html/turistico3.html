@@ -40,27 +40,6 @@
         <section class="contenedor acerca">
             <h2 class="subtitulo">¿Que conoceras en esta ruta? </h2>
             <p class="acerca-parrafo">Todo lo necesario para llevarte una experiencia increible sobre este lugar</p>
-
-            <div class="acerca-main">
-                <article class="acerca-imgs">
-                    
-                    <h3 class="acerca-titulo">Principal1</h3>
-                    <p class="acerca-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vitae odit veritatis fuga mollitia?</p>
-                </article>
-                <article class="acerca-imgs">
-                    
-                    <h3 class="acerca-titulo">Principal2</h3>
-                    <p class="acerca-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vitae odit veritatis fuga mollitia?</p>
-                </article>
-                <article class="acerca-imgs">
-                    
-                    <h3 class="acerca-titulo">Principal3</h3>
-                    <p class="acerca-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vitae odit veritatis fuga mollitia?</p>
-                </article>
-            </div>
         </section>
         <section class="info">
             <div class="info-contenedor contenedor">
@@ -82,6 +61,56 @@
 
         </section>
     </main>
+
+    <section id="reserva">
+        <div class="container">
+            <div class="row">
+                <h1 class="section-title">RESERVAS DE RUTAS</h1>
+            </div>
+            <div class="row">
+                <div id="menu1" class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="about-item">
+                        <div class="about-text">
+                            <h3><a>Reservar tu rutas PARQUE LA CAROLINA</a></h3>
+                            <p>Consulte horarios disponibles</p>
+                            <a class="btn btn btn-rm" href="#reserva" onclick="app.mostrarrutas();">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu2" class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="about-item">
+                        <div class="about-text">
+                            <h3><a>Consulta tus rutas programadas</a></h3>
+                            <p>Consulte sus reservas por número de cédula</p>
+                            <input id="docConsulta" class="mb-20 form-control" name="cedula"
+                                placeholder="Ingresa tu número de cédula">
+                            <a class="btn btn-common btn-rm" href="#reserva"
+                                onclick="app.consultarReserva();">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="campodoc" style="display: none;">
+                    <form action="javascript:void(0);" method="POST" id="reserva-edit">
+                        <p id="datosrutas"></p>
+                        <input type="text" id="name" placeholder="Ingrese su nombre:">
+                        <input type="text" id="documento" placeholder="Cedula de Ciudadania">
+                        <input type="submit" value="Reservar" class="btn" />
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <table>
+                            <tbody id="rutas"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a id="btnback" style="display: none;" href="#" class="btn btn-common btn-rm"
+                onclick="app.Volver();">Volver</a>
+        </div>
+    </section>
+
 
     <footer class="container">
         <div class="redes-sociales">
@@ -105,7 +134,7 @@
             <p> &copy; Sitio diseñado por <a href="#">Grupo #2 Proyecto Integrador</a></p>
         </div>
     </footer>
-    <script src="/js/turistico1.js"></script>
+    <script src="/js/turistico3.js"></script>
 </body>
 
 </html>
