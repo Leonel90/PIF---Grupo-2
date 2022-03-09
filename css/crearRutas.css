@@ -298,6 +298,17 @@ hr {
     justify-content: space-around;
 }
 
+.subtitulo{
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+}
+#formItems{
+align-items: center;
+}
+
 .nav-menu > li > a{
     display: block;
     padding: 15px 05px;
